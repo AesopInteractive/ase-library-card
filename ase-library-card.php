@@ -174,6 +174,12 @@ class aseLibraryCard {
 				<div class="ase-library-card-middle">
 					<?php echo $avatar;?>
 					<h6><?php echo $name;?></h6>
+					<ul class="unstyled">
+						<li>Level 3</li>
+						<li>All Themes</li>
+						<li>All Add-ons</li>
+						<li>Premium Support</li>
+					</ul>
 				</div>
 				<div class="ase-library-card-bottom">
 					<div class="ase-library-card-bottom-left ">
@@ -206,7 +212,7 @@ class aseLibraryCard {
 		?>
 		<ul class="ase-library-card-pricing unstyled">
 			<?php foreach($plans as $plan){ ?>
-			<li>
+			<li class="library-card-plan-<?php echo strtolower($plan['name']);?>">
 				<div class="pricing-top">
 					<h4 class="ase-card-plan-name"><?php echo $plan['name'];?></h4>
 					<div class="ase-card-plan-price"><span class="denom">$</span><?php echo $plan['price'];?></div>
